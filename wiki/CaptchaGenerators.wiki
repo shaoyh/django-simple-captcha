@@ -1,14 +1,12 @@
 =Django Simple Captcha=
 
-== Generators ==
+== Available Generators ==
 The following generators are available:
 
 === Random chars ===
 http://django-simple-captcha.googlecode.com/files/Random%20chars.png
 
 `CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge'`
-
-
 
 === Simple Math ===
 http://django-simple-captcha.googlecode.com/files/Math.png
@@ -19,3 +17,17 @@ http://django-simple-captcha.googlecode.com/files/Math.png
 http://django-simple-captcha.googlecode.com/files/Dictionary.png
 
 `CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.word_challenge'`
+
+
+== Rolling your own generator ==
+To have your own challenge generator, simply point `CAPTCHA_CHALLENGE_FUNCT` to a function that returns a tuple of strings, the first one (the challenge) will be rendered in the captcha, the second is the valid response to the challenge, e.g. `('5+10=', '15')`, `('AAAA', 'aaaa')`
+
+Sample generator that returns six random digits:
+{{{
+def random_digit_challenge():
+    import random
+    ret = u''
+    for i in range(6):
+        ret += str(random.randint(0,9))
+    return ret, ret
+}}}
