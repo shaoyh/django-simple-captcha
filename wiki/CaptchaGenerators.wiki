@@ -1,0 +1,21 @@
+=Django Simple Captcha=
+
+== Generators ==
+The following generators are available:
+
+=== Random chars ===
+http://django-simple-captcha.googlecode.com/files/Random%20chars.png
+
+`CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge'`
+
+
+
+=== Simple Math ===
+http://django-simple-captcha.googlecode.com/files/Math.png
+
+`CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'`
+
+=== Dictionary Word ===
+http://django-simple-captcha.googlecode.com/files/Dictionary.png
+
+`CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.word_challenge'`
