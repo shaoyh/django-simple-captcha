@@ -27,7 +27,9 @@ Foreground-color of the captcha.
 Defaults to `'#001100'`
 
 ==== `CAPTCHA_CHALLENGE_FUNCT` ====
-String representing a python callable (i.e. a function) that returns a tuple of strings, the first one (the challenge) will be rendered in the captcha, the second is the valid response to the challenge, e.g. `('5+10=', '15')`, `('AAAA', 'aaaa')`
+String representing a python callable (i.e. a function) to use challenge generator.
+
+See CaptchaGenerators for a list of available generators and a guide on how to write your own.
 
 Defaults to: `'captcha.helpers.random_char_challenge'`
 
