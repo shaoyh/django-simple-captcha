@@ -5,7 +5,7 @@
 The following configuration elements can be defined (in your `settings.py`)
 
 ==== `CAPTCHA_FONT_PATH` ====
-Full path and filename of a TrueType (TTF), !OpenType, or [http://www.pythonware.com/library/pil/handbook/pilfont.htm pilfont] font file used to render text.
+Full path and filename of a !TrueType (TTF), !OpenType, or [http://www.pythonware.com/library/pil/handbook/pilfont.htm pilfont] font file used to render text.
 
 Defaults to: `fonts/etl24-unicode.pil` (included in the application, public domain font).
 
