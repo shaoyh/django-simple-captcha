@@ -33,7 +33,7 @@ Defaults to: `'captcha.helpers.random_char_challenge'`
 
 
 ==== `CAPTCHA_NOISE_FUNCTIONS` ====
-List of strings of python callables that take a PIL [http://www.pythonware.com/library/pil/handbook/imagedraw.htm DrawImage] object and an [http://www.pythonware.com/library/pil/handbook/image.htm Image] iamge as input, modify the DrawImage, then return it.
+List of strings of python callables that take a PIL [http://www.pythonware.com/library/pil/handbook/imagedraw.htm DrawImage] object and an [http://www.pythonware.com/library/pil/handbook/image.htm Image] iamge as input, modify the !DrawImage, then return it.
 
 Defaults to: `('captcha.helpers.noise_arcs','captcha.helpers.noise_dots',)`
 
