@@ -4,19 +4,33 @@
 The following generators are available:
 
 === Random chars ===
-http://django-simple-captcha.googlecode.com/files/Random%20chars.png
+
+Classic captcha that picks four random chars. This is case insensitive.
 
 `CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge'`
 
+http://django-simple-captcha.googlecode.com/files/Random%20chars.png
+
+
 === Simple Math ===
-http://django-simple-captcha.googlecode.com/files/Math.png
+
+Another classic, that challenges the user to resolve a simple math challenge by randomly picking two numbers between one and nine, and a random operator among plus, minus, times.
 
 `CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'`
 
+http://django-simple-captcha.googlecode.com/files/Math.png
+
+
+
 === Dictionary Word ===
-http://django-simple-captcha.googlecode.com/files/Dictionary.png
+
+Picks a random word from a dictionary file. Note, you must define `CAPTCHA_WORDS_DICTIONARY` in CaptchaConfiguration to use this generator.
 
 `CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.word_challenge'`
+
+http://django-simple-captcha.googlecode.com/files/Dictionary.png
+
+
 
 
 == Rolling your own generator ==
