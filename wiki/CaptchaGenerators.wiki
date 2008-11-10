@@ -33,7 +33,7 @@ http://django-simple-captcha.googlecode.com/files/Dictionary.png
 
 
 
-== Rolling your own generator ==
+== Rolling your own ==
 To have your own challenge generator, simply point `CAPTCHA_CHALLENGE_FUNCT` to a function that returns a tuple of strings, the first one (the challenge) will be rendered in the captcha, the second is the valid response to the challenge, e.g. `('5+10=', '15')`, `('AAAA', 'aaaa')`
 
 Sample generator that returns six random digits:
