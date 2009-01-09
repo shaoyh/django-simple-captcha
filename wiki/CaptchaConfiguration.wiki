@@ -16,6 +16,13 @@ Font-size in pixels of the rendered text.
 
 Defaults to `'22'`.
 
+
+==== `CAPTCHA_LETTER_ROTATION` ====
+A random rotation in this interval is applied to each letter in the challenge text.
+
+Defaults to `(-35,35)`.
+
+
 ==== `CAPTCHA_BACKGROUND_COLOR` ====
 Background-color of the captcha. Can be expressed as html-style `#rrggbb`, `rgb(red, green, blue)`, or common html names (e.g. "red"). 
 
