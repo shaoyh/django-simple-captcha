@@ -68,3 +68,9 @@ Defaults to: `None` (no audio output)
 Integer. Lifespan, in minutes, of the generated captcha.
 
 Defaults to: `5`
+
+==== `CAPTCHA_LENGTH` ====
+
+Sets the length, in chars, of the generated captcha. (for the `'captcha.helpers.random_char_challenge'` challenge)
+
+Defaults to: `4`
