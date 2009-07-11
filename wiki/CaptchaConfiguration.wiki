@@ -88,4 +88,4 @@ When using the `word_challenge` challenge function, controls the maximal length 
 
 Defaults to: `99`
 
-Note: it's perfectly safe to specify e.g. `CAPTCHA_DICTIONARY_MIN_LENGTH = CAPTCHA_DICTIONARY_MAX_LENGTH = 6` but it'd considered an error to define CAPTCHA_DICTIONARY_MAX_LENGTH to be smaller than  CAPTCHA_DICTIONARY_MIN_LENGTH.
+Note: it's perfectly safe to specify e.g. `CAPTCHA_DICTIONARY_MIN_LENGTH = CAPTCHA_DICTIONARY_MAX_LENGTH = 6` but it'd considered an error to define `CAPTCHA_DICTIONARY_MAX_LENGTH` to be smaller than  `CAPTCHA_DICTIONARY_MIN_LENGTH`.
