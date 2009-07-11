@@ -74,3 +74,18 @@ Defaults to: `5`
 Sets the length, in chars, of the generated captcha. (for the `'captcha.helpers.random_char_challenge'` challenge)
 
 Defaults to: `4`
+
+
+==== `CAPTCHA_DICTIONARY_MIN_LENGTH` ====
+
+When using the `word_challenge` challenge function, controls the minimum length of the words to be randomly picked from the dictionary file.
+
+Defaults to: `0`
+
+==== `CAPTCHA_DICTIONARY_MAX_LENGTH` ====
+
+When using the `word_challenge` challenge function, controls the maximal length of the words to be randomly picked from the dictionary file.
+
+Defaults to: `99`
+
+Note: it's perfectly safe to specify e.g. `CAPTCHA_DICTIONARY_MIN_LENGTH = CAPTCHA_DICTIONARY_MAX_LENGTH = 6` but it'd considered an error to define CAPTCHA_DICTIONARY_MAX_LENGTH to be smaller than  CAPTCHA_DICTIONARY_MIN_LENGTH.
