@@ -7,9 +7,9 @@ The following configuration elements can be defined (in your `settings.py`)
 ==== `CAPTCHA_FONT_PATH` ====
 Full path and filename of a !TrueType (TTF), !OpenType, or [http://www.pythonware.com/library/pil/handbook/pilfont.htm pilfont] font file used to render text.
 
-Defaults to: `fonts/etl24-unicode.pil` (included in the application, public domain font).
+Defaults to: `fonts/Vera.ttf` (included in the application, GPL font).
 
-For best results, download and install the [http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/ Bitstream Vera Fonts] and point it to e.g. `'/usr/X11R6/lib/X11/fonts/TTF/Vera.ttf'`
+Note that your PIL installation must support TTF and/or OpenFont if you want to use this kind of glyphs (most modern distributions of PIL do.)
 
 ==== `CAPTCHA_FONT_SIZE` ====
 Font-size in pixels of the rendered text. 
