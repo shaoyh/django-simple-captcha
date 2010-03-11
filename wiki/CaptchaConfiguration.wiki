@@ -22,6 +22,8 @@ A random rotation in this interval is applied to each letter in the challenge te
 
 Defaults to `(-35,35)`.
 
+New in version 0.1.6: set this to None to disable letter roation.
+
 
 ==== `CAPTCHA_BACKGROUND_COLOR` ====
 Background-color of the captcha. Can be expressed as html-style `#rrggbb`, `rgb(red, green, blue)`, or common html names (e.g. "red"). 
@@ -89,3 +91,14 @@ When using the `word_challenge` challenge function, controls the maximal length 
 Defaults to: `99`
 
 Note: it's perfectly safe to specify e.g. `CAPTCHA_DICTIONARY_MIN_LENGTH = CAPTCHA_DICTIONARY_MAX_LENGTH = 6` but it'd considered an error to define `CAPTCHA_DICTIONARY_MAX_LENGTH` to be smaller than  `CAPTCHA_DICTIONARY_MIN_LENGTH`.
+
+
+==== `CAPTCHA_OUTPUT_FORMAT` ====
+
+*New in version 0.1.6*
+
+Specify your own output format for the generated markup, when e.g. you want to position the captcha image relative to the text field in your form.
+
+Defaults to: ` u'%(image)s %(hidden_field)s %(text_field)s' ` 
+
+Note: the three keys have to be present in the format string or an error will be thrown at runtime.
